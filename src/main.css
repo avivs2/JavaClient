@@ -1,0 +1,9 @@
+.vbLogin {
+-fx-background-color:#f1f1f1;
+ -fx-padding:50
+}
+
+.mainTitle {
+-fx-font: 20px "Verdana";
+-fx-font-weight:bold
+}
