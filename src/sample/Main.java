@@ -9,7 +9,17 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     @FXML
+   // Button socketBtn;
 
+
+    /*void initialize(){
+        socketBtn.setOnContextMenuRequested(new EventHandler<ContextMenuEvent>() {
+            @Override
+            public void handle(ContextMenuEvent event) {
+
+            }
+        });
+    }*/
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
