@@ -34,7 +34,7 @@ public class logo {
         Scene scene = new Scene(root, 400, 320);
         scene.getStylesheets().add(getClass().getResource("logo.css").toExternalForm());
         stage.setScene(scene);
-        stage.show();
+        stage.showAndWait();
         myProt.SetIpAndPort(controller.getip(),Integer.parseInt(controller.getport()));
     }
 
