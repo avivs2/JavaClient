@@ -8,7 +8,7 @@
 
 <VBox fx:id="vbLogin" alignment="CENTER" spacing="10.0" styleClass="vbLogin"
 
-      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.logoController">
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 
    <children>
 
