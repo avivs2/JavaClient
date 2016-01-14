@@ -1,5 +1,5 @@
-.logo{
-    -fx-background-image:url("file:images/imdb.jpg");
+.background{
+    -fx-background-image:url("file:images/network.jpg");
     /*-fx-background-color:
         linear-gradient(#f0ff35, #a9ff00),
         radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
@@ -8,16 +8,6 @@
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
     -fx-text-fill: #395306;*/
 }
-
-.Hbox{
--fx-padding:20
-}
-.vbLogin {
--fx-background-color:#f1f1f1;
- -fx-padding:50
-}
-
-.mainTitle {
--fx-font: 20px "Verdana";
--fx-font-weight:bold
+.transparent{
+-fx-background-color: transparent;
 }

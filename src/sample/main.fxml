@@ -6,11 +6,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.mainController">
     <top>
-        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <HBox fx:id="main" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" styleClass="Hbox">
             <children>
-                <Button fx:id="socketBtn" mnemonicParsing="false" text="Logo" styleClass="green"/>
+                <Button fx:id="logoBtn" mnemonicParsing="false" text="         " styleClass="logo"/>
                 <TextField promptText="Please enter movie or professional id" />
                 <MenuButton mnemonicParsing="false" text="MenuButton">
                     <items>
