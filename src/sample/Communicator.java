@@ -8,7 +8,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
- * Created by אביב on 1/14/2016.
+ * Created by aviv on 1/14/2016.
  */
 public class Communicator {
     private TCP myProt;
