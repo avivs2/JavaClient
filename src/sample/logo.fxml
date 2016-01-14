@@ -6,31 +6,18 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="vbLogin" alignment="CENTER" spacing="10.0" styleClass="vbLogin"
+
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.logoController">
+
    <children>
-      <TextField fx:id="ip" alignment="CENTER" promptText="Insert Ip Adress">
-         <padding>
-            <Insets left="250.0" right="250.0" />
-         </padding>
-         <VBox.margin>
-            <Insets top="100.0" />
-         </VBox.margin>
-      </TextField>
-      <TextField fx:id="port" alignment="CENTER" promptText="Insert Port Number">
-         <padding>
-            <Insets left="250.0" right="250.0" />
-         </padding>
-         <VBox.margin>
-            <Insets />
-         </VBox.margin>
-      </TextField>
-      <Button mnemonicParsing="false" text="Save" textAlignment="CENTER">
-         <padding>
-            <Insets top="20.0" />
-         </padding>
-      </Button>
+
+      <TextField fx:id="ip" promptText="Insert Ip Adress" styleClass="txt" />
+
+      <TextField fx:id="port" promptText="Insert Port Number" styleClass="txt" />
+
+      <Button fx:id="saveBtn" text="Save" styleClass="button" />
+
    </children>
-   <padding>
-      <Insets top="20.0" />
-   </padding>
+
 </VBox>

@@ -8,7 +8,7 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
 public class mainController {
-    TCP myProt;
+    private TCP myProt;
     @FXML
     Button logoBtn;
 
