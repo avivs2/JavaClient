@@ -18,7 +18,7 @@ public class mainController {
         logoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                logoController lg=new logoController();
+                logo lg=new logo();
                 try {
                     lg.show(myProt);
                 } catch (IOException e) {
