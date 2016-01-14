@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbLogin" alignment="CENTER" spacing="10.0" styleClass="vbLogin" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+      <Label text="fill the profesional details" />
+      <MenuButton mnemonicParsing="false" text="select type">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Actor" />
+          <MenuItem mnemonicParsing="false" text="Director" />
+            <MenuItem mnemonicParsing="false" text="Producer" />
+            <MenuItem mnemonicParsing="false" text="Screenwriter" />
+        </items>
+      </MenuButton>
+
+        <TextField fx:id="port" promptText="id" styleClass="txt" />
+      <TextField fx:id="ip1" promptText="age" styleClass="txt" />
+      <TextField fx:id="ip2" promptText="description" styleClass="txt" />
+      <MenuButton mnemonicParsing="false" text="select gender">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Male" />
+          <MenuItem mnemonicParsing="false" text="Female" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="ip3" promptText="name" styleClass="txt" />
+
+        <Button fx:id="saveBtn" styleClass="button" text="adding movies will be soon" />
+
+    </children>
+   <padding>
+      <Insets left="20.0" right="20.0" />
+   </padding>
+
+</VBox>

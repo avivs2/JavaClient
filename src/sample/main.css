@@ -21,3 +21,6 @@
 -fx-font: 20px "Verdana";
 -fx-font-weight:bold
 }
+.plus{
+-fx-background-image:url("file:images/plus.jpg");
+}

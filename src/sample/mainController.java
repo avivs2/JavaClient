@@ -1,8 +1,10 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
@@ -11,6 +13,10 @@ public class mainController {
     private Communicator myProt;
     @FXML
     Button logoBtn;
+
+    @FXML
+    MenuItem plusPro;
+
 
     @FXML
     void initialize(){
@@ -26,7 +32,17 @@ public class mainController {
                 }
             }
         });
-        System.out.println(myProt.getPort());
+        plusPro.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                AddPro ap = new AddPro();
+                try {
+                    ap.show(myProt);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
 }
