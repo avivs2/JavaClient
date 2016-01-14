@@ -6,12 +6,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="sample.mainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainController">
     <top>
-        <HBox fx:id="main" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" styleClass="Hbox">
+        <HBox fx:id="main" prefHeight="100.0" prefWidth="200.0" styleClass="Hbox" BorderPane.alignment="CENTER">
             <children>
-                <Button fx:id="logoBtn" mnemonicParsing="false" text="         " styleClass="logo"/>
+                <Button fx:id="logoBtn" mnemonicParsing="false" styleClass="logo" text="         " />
                 <TextField promptText="Please enter movie or professional id" />
                 <MenuButton mnemonicParsing="false" text="MenuButton">
                     <items>
@@ -35,7 +34,7 @@
                         </ContextMenu>
                     </contextMenu>
                 </Button>
-                <Button mnemonicParsing="false" text="Button">
+                <Button fx:id="plus" mnemonicParsing="false" text="Button">
                     <contextMenu>
                         <ContextMenu>
                             <items>

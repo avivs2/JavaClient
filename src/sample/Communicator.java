@@ -11,13 +11,22 @@ import java.net.Socket;
  * Created by aviv on 1/14/2016.
  */
 public class Communicator {
-    private TCP myProt;
+    private String server_ip;
+    private int port;
     private PrintWriter out;
     private BufferedReader in;
-    void Init() {
+    private Socket socket;
+
+    Communicator () {
+        this.server_ip = "127.0.0.1";
+        this.port = 5555;
+        this.Init();
+    }
+
+    private void Init() {
         try {
 
-            Socket socket = new Socket(InetAddress.getByName(myProt.getServer_ip()), myProt.getPort());
+            this.socket = new Socket(InetAddress.getByName(this.server_ip), this.port);
 
              this.out= new PrintWriter(socket.getOutputStream(), true);
 
@@ -26,17 +35,30 @@ public class Communicator {
             e1.printStackTrace();
         }
     }
-    void SendMessage(String data){
+    public void SendMessage(String data){
         out.println(data);
     }
-    void RecieveMessage() {
+    public void RecieveMessage() {
         try {
             String fromServer = in.readLine();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    void SetIpAndPort(String ip,int port){
-        myProt.SetIpAndPort(ip,port);
+    public void SetIpAndPort(String ip,int port) {
+        try {
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        this.server_ip = ip;
+        this.port = port;
+        this.Init();
+    }
+    public String getServer_ip(){
+        return server_ip;
+    }
+    public int getPort(){
+        return port;
     }
 }

@@ -8,17 +8,17 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
 public class mainController {
-    private TCP myProt;
+    private Communicator myProt;
     @FXML
     Button logoBtn;
 
     @FXML
     void initialize(){
-        myProt=new TCP();
+        myProt=new Communicator();
         logoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                logo lg=new logo();
+                logo lg = new logo();
                 try {
                     lg.show(myProt);
                 } catch (IOException e) {

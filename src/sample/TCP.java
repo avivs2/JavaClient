@@ -15,8 +15,8 @@ public class TCP {
     private int port;
 
     TCP() {
-        server_ip=null;
-        port=-1;
+        server_ip = "127.0.0.1";
+        port = 5555;
     }
     public void SetIpAndPort(String ip, int port){
         this.server_ip=ip;

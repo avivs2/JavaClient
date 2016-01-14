@@ -11,6 +11,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class logoController {
+    private String sip, sport;
     @FXML
     TextField ip;
 
@@ -26,16 +27,21 @@ public class logoController {
             @Override
             public void handle(MouseEvent event) {
                 Stage stage=(Stage)saveBtn.getScene().getWindow();
-
+                sip = ip.getText();
+                sport = port.getText();
                 stage.close();
             }
         });
     }
+    public void setPromp(String sip, int sport) {
+        port.setPromptText(Integer.toString(sport));
+        ip.setPromptText(sip);
+    }
     public String getip() {
-        return ip.getText();
+        return sip;
     }
     public String getport() {
-        return port.getText();
+        return sport;
     }
 
 }

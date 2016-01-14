@@ -19,17 +19,17 @@ import java.io.IOException;
 public class logo {
     private FXMLLoader loader;
     private logoController controller;
-    logo() {
-    }
+    logo() {}
 
 
-    public void show(TCP myProt) throws IOException {
+    public void show(Communicator myProt) throws IOException {
         loader = new FXMLLoader(getClass().getResource("logo.fxml"));
         controller = new logoController();
         loader.setController(this.controller);
 
         Stage stage=new Stage();
         Parent root = loader.load();
+        controller.setPromp(myProt.getServer_ip(), myProt.getPort());
         stage.setTitle("logo");
         Scene scene = new Scene(root, 400, 320);
         scene.getStylesheets().add(getClass().getResource("logo.css").toExternalForm());
