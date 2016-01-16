@@ -17,6 +17,8 @@ public class mainController {
     @FXML
     MenuItem plusPro;
 
+    @FXML
+    MenuItem plusMov;
 
     @FXML
     void initialize(){
@@ -37,7 +39,18 @@ public class mainController {
             public void handle(ActionEvent event) {
                 AddPro ap = new AddPro();
                 try {
-                    ap.show(myProt);
+                    ap.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        plusMov.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                AddMov am = new AddMov();
+                try {
+                    am.show();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

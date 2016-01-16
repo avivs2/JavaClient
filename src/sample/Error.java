@@ -8,23 +8,24 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * Created by tohargilbar on 14/01/16.
+ * Created by אביב on 1/16/2016.
  */
-public class AddPro {
+public class Error {
     private FXMLLoader loader;
     private AddProController controller;
-    AddPro() {
+    Error(){
+
     }
     public void show() throws IOException {
-        loader = new FXMLLoader(getClass().getResource("addPro.fxml"));
+        loader = new FXMLLoader(getClass().getResource("error.fxml"));
         controller = new AddProController();
         loader.setController(this.controller);
 
         Stage stage=new Stage();
         Parent root = loader.load();
-        stage.setTitle("adding a profesional");
-        Scene scene = new Scene(root, 250, 300);
-        scene.getStylesheets().add(getClass().getResource("logo.css").toExternalForm());
+        stage.setTitle("Error");
+        Scene scene = new Scene(root, 100 , 50);
+
         stage.setScene(scene);
         stage.showAndWait();
         //myProt.SetIpAndPort(controller.getip(),Integer.parseInt(controller.getport()));
