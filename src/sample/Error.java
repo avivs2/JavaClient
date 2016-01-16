@@ -12,13 +12,13 @@ import java.io.IOException;
  */
 public class Error {
     private FXMLLoader loader;
-    private AddProController controller;
+    private ErrorController controller;
     Error(){
 
     }
     public void show() throws IOException {
         loader = new FXMLLoader(getClass().getResource("error.fxml"));
-        controller = new AddProController();
+        controller = new ErrorController();
         loader.setController(this.controller);
 
         Stage stage=new Stage();

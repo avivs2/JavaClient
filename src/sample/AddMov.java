@@ -12,12 +12,12 @@ import java.io.IOException;
  * **/
 public class AddMov {
     private FXMLLoader loader;
-    private AddProController controller;
+    private AddMovController controller;
     AddMov() {
     }
     public void show() throws IOException {
         loader = new FXMLLoader(getClass().getResource("addMov.fxml"));
-        controller = new AddProController();
+        controller = new AddMovController();
         loader.setController(this.controller);
 
         Stage stage=new Stage();
@@ -26,7 +26,7 @@ public class AddMov {
         Scene scene = new Scene(root, 250, 350);
         scene.getStylesheets().add(getClass().getResource("logo.css").toExternalForm());
         stage.setScene(scene);
-        stage.showAndWait();
+        stage.show();
         //myProt.SetIpAndPort(controller.getip(),Integer.parseInt(controller.getport()));
     }
 }
