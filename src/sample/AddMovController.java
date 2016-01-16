@@ -29,20 +29,20 @@ public class AddMovController {
                 flag=!(idField.getText().isEmpty()|| nameField.getText().isEmpty()||lengthField.getText().isEmpty()
                         ||yearField.getText().isEmpty()||ratingField.getText().isEmpty());
                 Error er=new Error();
-                try {
-                    er.show();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                if(!flag){
-                    //one of the fields empty
-                    //Error er=new Error();
-                    try {
-                        er.show();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
+//                try {
+//                    er.show();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//                if(!flag){
+//                    //one of the fields empty
+//                    //Error er=new Error();
+//                    try {
+//                        er.show();
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
             }
         });
 
