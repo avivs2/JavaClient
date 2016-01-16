@@ -10,25 +10,25 @@
 
     <children>
       <Label text="fill the profesional details" />
-      <MenuButton mnemonicParsing="false" text="select type">
+      <MenuButton fx:id="itype" mnemonicParsing="false" text="select type">
         <items>
-          <MenuItem mnemonicParsing="false" text="Actor" />
-          <MenuItem mnemonicParsing="false" text="Director" />
-            <MenuItem mnemonicParsing="false" text="Producer" />
-            <MenuItem mnemonicParsing="false" text="Screenwriter" />
+          <MenuItem fx:id="iactor" mnemonicParsing="false" text="Actor" />
+          <MenuItem fx:id="idirector" mnemonicParsing="false" text="Director" />
+            <MenuItem fx:id="iproducer" mnemonicParsing="false" text="Producer" />
+            <MenuItem fx:id="iscreenwriter" mnemonicParsing="false" text="Screenwriter" />
         </items>
       </MenuButton>
 
-        <TextField fx:id="port" promptText="id" styleClass="txt" />
-      <TextField fx:id="ip1" promptText="age" styleClass="txt" />
-      <TextField fx:id="ip2" promptText="description" styleClass="txt" />
-      <MenuButton mnemonicParsing="false" text="select gender">
+        <TextField fx:id="iid" promptText="id" styleClass="txt" />
+      <TextField fx:id="iage" promptText="age" styleClass="txt" />
+      <TextField fx:id="idescription" promptText="description" styleClass="txt" />
+      <MenuButton fx:id="igender" mnemonicParsing="false" text="select gender">
         <items>
-          <MenuItem mnemonicParsing="false" text="Male" />
-          <MenuItem mnemonicParsing="false" text="Female" />
+          <MenuItem fx:id="imale" mnemonicParsing="false" text="Male" />
+          <MenuItem fx:id="ifemale" mnemonicParsing="false" text="Female" />
         </items>
       </MenuButton>
-      <TextField fx:id="ip3" promptText="name" styleClass="txt" />
+      <TextField fx:id="iname" promptText="name" styleClass="txt" />
 
         <Button fx:id="saveBtn" styleClass="button" text="adding movies will be soon" />
 
